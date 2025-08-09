@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "dio.java"
+group = "br.com.dio"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -14,11 +14,7 @@ dependencies {
     implementation("mysql:mysql-connector-java:8.0.33")
     implementation("org.projectlombok:lombok:1.18.34")
 
-    annotationProcessor("org.projectlomboj:lombok:1.18.34")
-
-
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    annotationProcessor("org.projectlombok:lombok:1.18.34")
 }
 
 tasks.test {
